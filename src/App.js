@@ -53,12 +53,12 @@ const MovieListContainer = styled.div`
   justify-content: space-evenly;
   background-color:black;
 `;
-const Placeholder = styled.img`
-  width: 120px;
-  height: 120px;
-  margin: 150px;
-  opacity: 50%;
-`;
+// const Placeholder = styled.img`
+//   width: 120px;
+//   height: 120px;
+//   margin: 150px;
+//   opacity: 50%;
+// `;
 
 function App() {
   const [searchQuery, updateSearchQuery] = useState("");
@@ -109,7 +109,7 @@ function App() {
             />
           ))
         ) : (
-          <Placeholder src="/react-movie-app/movie-icon.svg" />
+          <div> no movie search</div>
         )}
       </MovieListContainer>
     </Container>
